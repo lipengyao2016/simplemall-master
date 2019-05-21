@@ -1,0 +1,374 @@
+2019-04-10 19:16:58.684  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@39a054a5: startup date [Wed Apr 10 19:16:58 CST 2019]; root of context hierarchy
+2019-04-10 19:17:00.288  INFO [bootstrap,,,] 4040 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-10 19:17:00.997  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$5a432909] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:01.075  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$809993e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.2.RELEASE)
+
+2019-04-10 19:17:03.429  INFO [bootstrap,,,] 4040 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://192.168.7.167:9004/
+2019-04-10 19:17:11.073  INFO [bootstrap,,,] 4040 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=front-app, profiles=[dev], label=master, version=f074b7216abfa42f44d29fc82bcc05a77f97ef93, state=null
+2019-04-10 19:17:11.080  INFO [bootstrap,,,] 4040 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/backkoms/spring-cloud-repo/repo/front-app-dev.properties']]]
+2019-04-10 19:17:11.465  INFO [bootstrap,,,] 4040 --- [           main] c.s.m.s.page.FrontAPPClientApplication   : No active profile set, falling back to default profiles: default
+2019-04-10 19:17:11.605  INFO [bootstrap,,,] 4040 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604: startup date [Wed Apr 10 19:17:11 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39a054a5
+2019-04-10 19:17:17.160  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+2019-04-10 19:17:18.452  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-04-10 19:17:19.362  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'retryTemplate' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$RetryAutoConfiguration; factoryMethodName=retryTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration$RetryAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.ribbon.FeignRibbonClientAutoConfiguration; factoryMethodName=retryTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/ribbon/FeignRibbonClientAutoConfiguration.class]]
+2019-04-10 19:17:19.798  WARN [bootstrap,,,] 4040 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2019-04-10 19:17:21.009  INFO [bootstrap,,,] 4040 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a5eca188-3a79-384c-b00a-d09eeeccb074
+2019-04-10 19:17:21.148  INFO [bootstrap,,,] 4040 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-04-10 19:17:21.166  INFO [bootstrap,,,] 4040 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-04-10 19:17:21.231  INFO [bootstrap,,,] 4040 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-10 19:17:21.387  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.simplemall.micro.serv.page.client.AccountFeignClient' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:21.398  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.simplemall.micro.serv.page.client.OrderFeignClient' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:21.402  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.simplemall.micro.serv.page.client.ProductFeignClient' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:21.612  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$2aeb4f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:22.057  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$a1c12ea7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:22.907  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$647f90e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:24.500  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$96ac3725] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:24.937  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:25.072  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:26.010  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$809993e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:26.161  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration' of type [org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration$$EnhancerBySpringCGLIB$$26472ee9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:26.590  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.web.client.feign.TraceFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.feign.TraceFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a41169aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:17:30.584  INFO [bootstrap,,,] 4040 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8088 (http)
+2019-04-10 19:17:30.631  INFO [bootstrap,,,] 4040 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-04-10 19:17:30.633  INFO [bootstrap,,,] 4040 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-04-10 19:17:31.106  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 19:17:31.108  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 19503 ms
+2019-04-10 19:17:31.420  WARN [bootstrap,,,] 4040 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-04-10 19:17:31.428  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-04-10 19:17:31.478  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4d12a5e3
+2019-04-10 19:17:39.225  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2019-04-10 19:17:39.226  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-10 19:17:39.226  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2019-04-10 19:17:39.227  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-10 19:17:39.227  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-10 19:17:39.227  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-10 19:17:39.227  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-04-10 19:17:39.227  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-04-10 19:17:39.228  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'hystrixMetricsStreamServlet' to [/hystrix.stream]
+2019-04-10 19:17:39.230  INFO [bootstrap,,,] 4040 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-10 19:17:41.805  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e61d218: startup date [Wed Apr 10 19:17:41 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604
+2019-04-10 19:17:41.948  INFO [bootstrap,,,] 4040 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-10 19:17:49.015  INFO [bootstrap,,,] 4040 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2019-04-10 19:18:00.829  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/acc/signup],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.lang.String> com.simplemall.micro.serv.page.api.APIAccountController.signup(java.lang.String,java.lang.String)
+2019-04-10 19:18:00.956  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/address/list/{accountTid}],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.util.List<com.simplemall.micro.serv.common.bean.account.AccAddress>> com.simplemall.micro.serv.page.api.APIAccountController.queryAccAddress(java.lang.String,java.lang.String)
+2019-04-10 19:18:00.957  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/acc/logout],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.lang.Boolean> com.simplemall.micro.serv.page.api.APIAccountController.logout(java.lang.String,java.lang.String)
+2019-04-10 19:18:00.958  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/acc/login],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.lang.String> com.simplemall.micro.serv.page.api.APIAccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2019-04-10 19:18:00.959  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order/state/change],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<com.simplemall.micro.serv.common.bean.order.OrderDTO> com.simplemall.micro.serv.page.api.APIOrderController.stateChange(java.lang.String,java.lang.String)
+2019-04-10 19:18:00.962  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order/create],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.lang.String> com.simplemall.micro.serv.page.api.APIOrderController.createOrder(java.lang.String,java.lang.String)
+2019-04-10 19:18:00.962  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order/view],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<com.simplemall.micro.serv.common.bean.order.OrderDTO> com.simplemall.micro.serv.page.api.APIOrderController.viewOrder(java.lang.String,java.lang.String,java.lang.String)
+2019-04-10 19:18:00.965  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/payment/pay],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.lang.Boolean> com.simplemall.micro.serv.page.api.APIPayMentController.pay(java.lang.String,java.lang.String,java.math.BigDecimal,java.lang.String)
+2019-04-10 19:18:00.969  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/prd/buy/{prdId}],methods=[POST]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.lang.Boolean> com.simplemall.micro.serv.page.api.APIProductController.buyProduct(java.lang.String,java.lang.String)
+2019-04-10 19:18:00.970  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/prd/detail/{prdId}],methods=[GET]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<com.simplemall.micro.serv.common.bean.product.PrdInfo> com.simplemall.micro.serv.page.api.APIProductController.getProductById(java.lang.String)
+2019-04-10 19:18:00.970  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/prd/list],methods=[GET]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.util.List<com.simplemall.micro.serv.common.bean.product.PrdInfo>> com.simplemall.micro.serv.page.api.APIProductController.list()
+2019-04-10 19:18:00.971  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/account/login],methods=[POST || GET]}" onto public com.simplemall.micro.serv.common.bean.RestAPIResult<java.lang.String> com.simplemall.micro.serv.page.web.AccountController.login(java.lang.String,java.lang.String)
+2019-04-10 19:18:00.975  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-04-10 19:18:01.016  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-04-10 19:18:01.074  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-04-10 19:18:01.076  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-04-10 19:18:01.083  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-10 19:18:01.084  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-10 19:18:13.035  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-04-10 19:18:13.036  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.038  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.039  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.041  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.043  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2019-04-10 19:18:13.044  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.045  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2019-04-10 19:18:13.047  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-04-10 19:18:13.048  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.049  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2019-04-10 19:18:13.050  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2019-04-10 19:18:13.051  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2019-04-10 19:18:13.052  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2019-04-10 19:18:13.052  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2019-04-10 19:18:13.053  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-04-10 19:18:13.057  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-04-10 19:18:13.058  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-04-10 19:18:13.059  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.062  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-04-10 19:18:13.064  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.065  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.067  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-04-10 19:18:13.069  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2019-04-10 19:18:13.071  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.071  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-04-10 19:18:13.072  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-04-10 19:18:13.073  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:13.073  INFO [bootstrap,,,] 4040 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-04-10 19:18:14.492  INFO [bootstrap,,,] 4040 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604: startup date [Wed Apr 10 19:17:11 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39a054a5
+2019-04-10 19:18:15.047  INFO [bootstrap,,,] 4040 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-10 19:18:15.048  INFO [bootstrap,,,] 4040 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-10 19:18:15.286  INFO [bootstrap,,,] 4040 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-10 19:18:15.967  INFO [bootstrap,,,] 4040 --- [           main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [public/index.html]
+2019-04-10 19:18:16.612  INFO [bootstrap,,,] 4040 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'registrationTaskScheduler'
+2019-04-10 19:18:18.222  INFO [bootstrap,,,] 4040 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2019-04-10 19:18:19.628  INFO [bootstrap,,,] 4040 --- [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604: startup date [Wed Apr 10 19:17:11 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39a054a5] and template loader path [classpath:/templates/]
+2019-04-10 19:18:19.630  INFO [bootstrap,,,] 4040 --- [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-04-10 19:18:21.320  INFO [bootstrap,,,] 4040 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'front-app:8088.springCloudBusInput' has 1 subscriber(s).
+2019-04-10 19:18:21.677  WARN [bootstrap,,,] 4040 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-04-10 19:18:21.677  INFO [bootstrap,,,] 4040 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-04-10 19:18:22.417  INFO [bootstrap,,,] 4040 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2019-04-10 19:18:22.767  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.codec.kryo.CompositeKryoRegistrar  : configured Kryo registration [40, java.io.File] with serializer org.springframework.integration.codec.kryo.FileSerializer
+2019-04-10 19:18:23.443  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-10 19:18:23.460  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-04-10 19:18:23.461  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-04-10 19:18:23.462  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-04-10 19:18:23.463  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2019-04-10 19:18:23.465  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-04-10 19:18:23.466  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2019-04-10 19:18:23.467  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2019-04-10 19:18:23.472  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-04-10 19:18:23.542  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2019-04-10 19:18:23.564  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-04-10 19:18:23.596  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2019-04-10 19:18:23.627  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4c762604,type=ConfigurationPropertiesRebinder]
+2019-04-10 19:18:23.631  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-04-10 19:18:23.644  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2019-04-10 19:18:23.653  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2019-04-10 19:18:23.654  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2019-04-10 19:18:23.658  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusInput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusInput]
+2019-04-10 19:18:23.699  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2019-04-10 19:18:23.700  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2019-04-10 19:18:23.709  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2019-04-10 19:18:23.711  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2019-04-10 19:18:23.735  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2019-04-10 19:18:23.738  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusOutput]
+2019-04-10 19:18:23.783  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2019-04-10 19:18:23.785  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2019-04-10 19:18:24.205  INFO [bootstrap,,,] 4040 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2019-04-10 19:18:24.227  INFO [bootstrap,,,] 4040 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=e16dc807-d006-4ea6-8153-137fae552cdb, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2019-04-10 19:18:24.227  INFO [bootstrap,,,] 4040 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2019-04-10 19:18:24.228  INFO [bootstrap,,,] 4040 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2019-04-10 19:18:24.379  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2019-04-10 19:18:24.591  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d7a64ca: startup date [Wed Apr 10 19:18:24 CST 2019]; root of context hierarchy
+2019-04-10 19:18:24.638  INFO [bootstrap,,,] 4040 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-10 19:18:24.677  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$5a432909] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:18:24.682  INFO [bootstrap,,,] 4040 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$809993e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-10 19:18:24.872  INFO [bootstrap,,,] 4040 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://192.168.7.167:9004/
+2019-04-10 19:18:26.507  INFO [bootstrap,,,] 4040 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=front-app, profiles=[dev], label=master, version=f074b7216abfa42f44d29fc82bcc05a77f97ef93, state=null
+2019-04-10 19:18:26.507  INFO [bootstrap,,,] 4040 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/backkoms/spring-cloud-repo/repo/front-app-dev.properties']]]
+2019-04-10 19:18:26.548  INFO [bootstrap,,,] 4040 --- [           main] c.s.m.s.page.FrontAPPClientApplication   : No active profile set, falling back to default profiles: default
+2019-04-10 19:18:26.567  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f79f192: startup date [Wed Apr 10 19:18:26 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604
+2019-04-10 19:18:26.704  INFO [bootstrap,,,] 4040 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-10 19:18:27.062  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@58dad04a: startup date [Wed Apr 10 19:18:27 CST 2019]; root of context hierarchy
+2019-04-10 19:18:27.190  INFO [bootstrap,,,] 4040 --- [           main] c.s.m.s.page.FrontAPPClientApplication   : Started FrontAPPClientApplication in 2.72 seconds (JVM running for 93.576)
+2019-04-10 19:18:27.539  INFO [bootstrap,,,] 4040 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@31a136a6 [delegate=amqp://admin@192.168.7.188:5672/, localPort= 46257]
+2019-04-10 19:18:27.645  INFO [bootstrap,,,] 4040 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'front-app:8088.springCloudBusOutput' has 1 subscriber(s).
+2019-04-10 19:18:27.647  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-04-10 19:18:27.713  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-04-10 19:18:28.608  INFO [bootstrap,,,] 4040 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-04-10 19:18:28.610  INFO [bootstrap,,,] 4040 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-04-10 19:18:29.089  INFO [bootstrap,,,] 4040 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-04-10 19:18:29.090  INFO [bootstrap,,,] 4040 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-04-10 19:18:29.648  INFO [bootstrap,,,] 4040 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-04-10 19:18:29.744  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-04-10 19:18:29.744  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-04-10 19:18:29.744  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-04-10 19:18:29.744  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-04-10 19:18:29.744  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-04-10 19:18:29.744  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-04-10 19:18:29.745  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-04-10 19:18:30.224  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-04-10 19:18:30.226  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-04-10 19:18:30.229  INFO [bootstrap,,,] 4040 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-04-10 19:18:30.305  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1554895110233 with initial instances count: 5
+2019-04-10 19:18:30.560  INFO [bootstrap,,,] 4040 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application front-app with eureka with status UP
+2019-04-10 19:18:30.561  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1554895110561, current=UP, previous=STARTING]
+2019-04-10 19:18:30.564  INFO [bootstrap,,,] 4040 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FRONT-APP/N167:front-app:8088: registering service...
+2019-04-10 19:18:30.645  INFO [bootstrap,,,] 4040 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FRONT-APP/N167:front-app:8088 - registration status: 204
+2019-04-10 19:18:30.691  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-04-10 19:18:30.692  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'front-app:8088.errorChannel' has 1 subscriber(s).
+2019-04-10 19:18:30.692  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2019-04-10 19:18:30.692  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2019-04-10 19:18:30.707  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.s.b.r.RabbitMessageChannelBinder   : declaring queue for inbound: springCloudBusInput.anonymous.GMpYVWgaTyOhS4sAJAD02Q, bound to: springCloudBusInput
+2019-04-10 19:18:30.862  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBusInput.anonymous.P9ClCoqQQK-btYbVj-WIrQ
+2019-04-10 19:18:30.862  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:inbound.springCloudBusInput.default} as a subscriber to the 'bridge.springCloudBusInput' channel
+2019-04-10 19:18:30.862  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started inbound.springCloudBusInput.default
+2019-04-10 19:18:30.863  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-04-10 19:18:30.864  INFO [bootstrap,,,] 4040 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-04-10 19:18:30.911  INFO [bootstrap,,,] 4040 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-04-10 19:18:31.038  INFO [bootstrap,,,] 4040 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-04-10 19:18:31.612  INFO [bootstrap,,,] 4040 --- [           main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2019-04-10 19:18:31.667  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ef4cbe1: startup date [Wed Apr 10 19:18:31 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604
+2019-04-10 19:18:31.718  INFO [bootstrap,,,] 4040 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-10 19:18:32.062  INFO [bootstrap,,,] 4040 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8088 (http)
+2019-04-10 19:18:32.064  INFO [bootstrap,,,] 4040 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 8088
+2019-04-10 19:18:32.068  INFO [bootstrap,,,] 4040 --- [           main] c.s.m.serv.page.start.StartUpLoading     : --->>>开始初始化加载数据Wed Apr 10 19:18:32 CST 2019
+2019-04-10 19:18:34.287  INFO [bootstrap,,,] 4040 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-04-10 19:18:34.304 ERROR [bootstrap,,,] 4040 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.simplemall.micro.serv.page.FrontAPPClientApplication.main(FrontAPPClientApplication.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at com.simplemall.micro.serv.common.service.JedisUtil.getJedis(JedisUtil.java:83)
+	at com.simplemall.micro.serv.common.service.JedisUtil$Sets.sadd(JedisUtil.java:407)
+	at com.simplemall.micro.serv.page.start.StartUpLoading.run(StartUpLoading.java:36)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 14 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 19 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 26 common frames omitted
+
+2019-04-10 19:18:34.308  INFO [bootstrap,,,] 4040 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604: startup date [Wed Apr 10 19:17:11 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@39a054a5
+2019-04-10 19:18:34.309  INFO [bootstrap,,,] 4040 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application front-app with eureka with status DOWN
+2019-04-10 19:18:34.310  WARN [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1554895114310, current=DOWN, previous=UP]
+2019-04-10 19:18:34.310  INFO [bootstrap,,,] 4040 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FRONT-APP/N167:front-app:8088: registering service...
+2019-04-10 19:18:34.310  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-04-10 19:18:34.313  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-04-10 19:18:34.326  INFO [bootstrap,,,] 4040 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FRONT-APP/N167:front-app:8088 - registration status: 204
+2019-04-10 19:18:34.339  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FRONT-APP/N167:front-app:8088 - deregister  status: 200
+2019-04-10 19:18:34.377  INFO [bootstrap,,,] 4040 --- [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-04-10 19:18:34.377  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f79f192: startup date [Wed Apr 10 19:18:26 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604
+2019-04-10 19:18:34.380  INFO [bootstrap,,,] 4040 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application front-app with eureka with status DOWN
+2019-04-10 19:18:34.385  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-04-10 19:18:34.392  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482647
+2019-04-10 19:18:34.431  INFO [bootstrap,,,] 4040 --- [           main] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2019-04-10 19:18:34.869  INFO [bootstrap,,,] 4040 --- [           main] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2019-04-10 19:18:34.870  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped inbound.springCloudBusInput.anonymous.P9ClCoqQQK-btYbVj-WIrQ
+2019-04-10 19:18:34.870  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-04-10 19:18:34.874  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-04-10 19:18:34.875  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'front-app:8088.errorChannel' has 0 subscriber(s).
+2019-04-10 19:18:34.875  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2019-04-10 19:18:34.875  INFO [bootstrap,,,] 4040 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2019-04-10 19:18:34.915  INFO [bootstrap,,,] 4040 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-04-10 19:18:34.916  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-10 19:18:34.916  INFO [bootstrap,,,] 4040 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-04-10 19:18:34.917  INFO [bootstrap,,,] 4040 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'registrationTaskScheduler'
+2019-04-10 19:18:34.959  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans on shutdown
+2019-04-10 19:18:34.959  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans
+2019-04-10 19:18:34.959  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: springCloudBusInput
+2019-04-10 19:18:34.959  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2019-04-10 19:18:34.959  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: errorChannel
+2019-04-10 19:18:34.959  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: springCloudBusOutput
+2019-04-10 19:18:34.959  INFO [bootstrap,,,] 4040 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2019-04-10 19:18:34.989  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ef4cbe1: startup date [Wed Apr 10 19:18:31 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604
+2019-04-10 19:18:34.989  INFO [bootstrap,,,] 4040 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application front-app with eureka with status DOWN
+2019-04-10 19:18:34.990  WARN [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'registrationListener': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:280)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:250)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:174)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:137)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:389)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:70)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:794)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.simplemall.micro.serv.page.FrontAPPClientApplication.main(FrontAPPClientApplication.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+
+2019-04-10 19:18:34.990  INFO [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2e61d218: startup date [Wed Apr 10 19:17:41 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c762604
+2019-04-10 19:18:34.990  INFO [bootstrap,,,] 4040 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application front-app with eureka with status DOWN
+2019-04-10 19:18:34.991  WARN [bootstrap,,,] 4040 --- [           main] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'registrationListener': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:280)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:250)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:174)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:137)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:389)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:70)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:794)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.simplemall.micro.serv.page.FrontAPPClientApplication.main(FrontAPPClientApplication.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+
